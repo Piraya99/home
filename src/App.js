@@ -3,6 +3,7 @@ import './App.css';
 
 import Bio from './components/Bio';
 import Feature from './components/Feature';
+import Experience from './components/Experience';
 import Footer from './components/Footer';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <main>
         <Bio french={french}/>
         <Feature french={french}/>
+        <Experience french={french}/>
       </main>
 
       <Footer french={french}/>

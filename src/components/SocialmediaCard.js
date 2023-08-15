@@ -13,9 +13,7 @@ function SocialmediaCard(props) {
 			</svg>
 		</a>
 		</div>
-
 	);
-
 };
 
 export default SocialmediaCard;

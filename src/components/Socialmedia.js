@@ -1,7 +1,7 @@
 import React from 'react';
-import {socialmedias} from './socialmediaData';	
+import { socialmedias } from './socialmediaData';	
 
-import SocialmediaCard from './SocialmediaCard'
+import SocialmediaCard from './SocialmediaCard';
 
 function Socialmedia(props) {
 	return (
