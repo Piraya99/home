@@ -1,0 +1,20 @@
+nav {
+  display: inline-flex;
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav li {
+  width: 70px;
+  padding-right: 40px;
+}
+
+nav a:link {
+  color: var(--main-darkgreen);
+}
+
+nav a:link {
+  color: var(--main-darkgreen);
+}

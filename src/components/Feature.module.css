@@ -9,6 +9,6 @@ li {
   width: 130px;
 }
 
-.longlist {
+ul.longlist li {
   width: 220px;
 }

@@ -74,23 +74,10 @@ button span.material-icons {
 
 /* Header Rulesets*/
 
-nav {
+header {
   margin: 0;
   text-align: right;
   padding: 0 10%;
-}
-
-nav ul {
-  display: inline-flex;
-}
-
-nav li {
-  width: 70px;
-  padding-right: 40px;
-}
-
-nav a:link {
-  color: var(--main-darkgreen);
 }
 
 /* Language Picker */

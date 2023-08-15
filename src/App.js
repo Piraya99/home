@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 
+import Navbar from './components/Navbar';
 import Bio from './components/Bio';
 import Feature from './components/Feature';
 import Experience from './components/Experience';
@@ -16,20 +17,15 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
-        <ul>
-          <li><a href="#timeline">{french ? 'Parcours' : 'Experiences'}</a></li>
-          <li><a href="#portfolio">{french ? 'Projets' : 'Projects'}</a></li>
-        </ul>
+      <header>
+        <Navbar french={french}/>
 
-      <button onClick={handleClick}>
-        <span className="material-icons md-18">language</span>
-        <span>{french ? 'Français' : 'English'}</span>
-        <span className="material-icons md-18">expand_more</span>
-      </button>
-
-      </nav>
-      
+        <button onClick={handleClick} className="languagePicker">
+          <span className="material-icons md-18">language</span>
+          <span>{french ? 'Français' : 'English'}</span>
+          <span className="material-icons md-18">expand_more</span>
+        </button>
+      </header>
       <main>
         <Bio french={french}/>
         <Feature french={french}/>

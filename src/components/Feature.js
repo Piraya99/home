@@ -54,20 +54,20 @@ function Feature(props) {
 
 				<div className="box">
 					<h4>{props.french ? "Compétences" : "Skills"}</h4>
-					<ul>
-						<li className={styles.longlist}>
+					<ul className={styles.longlist}>
+						<li>
 							<span className="material-icons md-24">palette</span>
 							{props.french ? "Design Graphique" : "Graphic Design"}
 						</li>
-						<li className={styles.longlist}>
+						<li>
 							<span className="material-icons md-24">computer</span>
 							{props.french ? "Design UX/UI" : "UI/UX Design"}
 						</li>
-						<li className={styles.longlist}>
+						<li>
 							<span className="material-icons md-24">edit</span>
 							{props.french ? "Création de Contenu" : "Content Creation"}
 						</li>
-						<li className={styles.longlist}>
+						<li>
 							<span className="material-icons md-24">rocket_launch</span>
 							{props.french ? "Gestion de Projet" : "Project Management"}
 						</li>
