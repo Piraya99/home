@@ -1,0 +1,18 @@
+.box {
+  background-color: rgba(230,231,232,0.75);
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.shortlist {
+  width: 130px;
+}
+
+.longlist {
+  width: 220px;
+}

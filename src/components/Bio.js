@@ -15,8 +15,12 @@ function Bio(props) {
 
 			<div>
 				<h1>Piraya Sanpakij</h1>
-				<h2 id="bioSubtitle">{props.french ? bio.h2[1] : bio.h2[0]}</h2>
-				<p>{props.french ? bio.p[1] : bio.p[0]}</p>
+				<h2 id="bioSubtitle">
+					{props.french ? bio.h2[1] : bio.h2[0]}
+				</h2>
+				<p>
+					{props.french ? bio.p[1] : bio.p[0]}
+				</p>
 				<Socialmedia />
 			</div>
 

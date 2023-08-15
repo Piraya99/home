@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import './App.css';
 
 import Bio from './components/Bio';
+import Feature from './components/Feature';
 import Footer from './components/Footer';
 
 function App() {
 
+  // Toggle Language Function
   const [french, setFrench] = useState(false);
   const handleClick = () => {
     setFrench(!french);
@@ -15,18 +17,21 @@ function App() {
     <div className="App">
       <nav>
         <ul>
-          <li><a href="#timeline">{french ? 'Expériences' : 'Experiences'}</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#timeline">{french ? 'Parcours' : 'Experiences'}</a></li>
+          <li><a href="#portfolio">{french ? 'Projets' : 'Projects'}</a></li>
         </ul>
+
       <button onClick={handleClick}>
         <span className="material-icons md-18">language</span>
         <span>{french ? 'Français' : 'English'}</span>
         <span className="material-icons md-18">expand_more</span>
       </button>
+
       </nav>
       
       <main>
         <Bio french={french}/>
+        <Feature french={french}/>
       </main>
 
       <Footer french={french}/>
