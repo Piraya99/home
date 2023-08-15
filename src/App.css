@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css');
+
+
+.App {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Theme Color */
+:root {
+  --background-color: #fff;
+  --main-darkgreen: #1f5636;
+  --main-beige: #8f8350;
+  --main-lightgrey: #e6e7e8;
+  --main-darkgrey: #535353; 
+}
+
+body {
+  line-height: 1.4em;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a, a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: inherit;
+}
+
+ul {
+  line-height: 2em;
+  list-style: none;
+}
+
+nav {
+  margin: 0;
+  text-align: right;
+  padding: 0 10%;
+}
+
+nav ul {
+  display: inline-flex;
+}
+
+nav li {
+  width: 70px;
+  padding-right: 40px;
+}
+
+nav a:link {
+  color: var(--main-darkgreen);
+}
+
+/* Language Picker */
+.languagePicker {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 10px;
+}
+
+button span{
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Icon Styling */
+.material-icons, .fi {
+  margin-right: 10px;
+}
+button span.material-icons {
+  margin-right: 5px;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  background-color: var(--background-color);
+  padding: 0 30px;
+}
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.github {
+  width: 36.5px;
+  height: 36.5px;
+}
+
+.behance, .linkedin, .instagram {
+  padding: 4px;
+}
+
+.github:hover {
+  fill: #7d349f;
+}
+
+.behance:hover {
+  fill: #053eff;
+}
+
+.linkedin:hover {
+  fill: #0e76a8;
+}
+
+.instagram:hover {
+  fill: #dd2a7b;
+}
+
