@@ -2,6 +2,7 @@ ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding-left: 24px;
   padding-bottom: 10px;
 }
 
@@ -11,4 +12,11 @@ li {
 
 ul.longlist li {
   width: 220px;
+}
+
+.icon img {
+  width: 20px;
+  height: auto;
+  padding-right: 10px;
+  margin-bottom: -3px;
 }

@@ -1,6 +1,12 @@
 import React from 'react';
 import styles from './Feature.module.css';
 
+import html from '../img/icon/html.png';
+import css from '../img/icon/css.png';
+import javascript from '../img/icon/javascript.png';
+import react from '../img/icon/react.png';
+import git from '../img/icon/git.png';
+
 function Feature(props) {
 	return (
 		<div className="feature">
@@ -8,25 +14,12 @@ function Feature(props) {
 
 				<div className="box">
 					<h4>{props.french ? "Languages Techniques" : "Programming Languages"}</h4>
-					<ul>
-						<li>
-							<span className="material-icons md-24">html</span>
-							HTML
-						</li>
-						<li>
-							<span className="material-icons md-24">css</span>
-							CSS
-						</li>
-						<li><span className="material-icons md-24">javascript</span>
-							Javascript
-						</li>
-						<li><span className="material-icons md-24">javascript</span>
-							React
-						</li>
-						<li>
-							<span className="material-icons md-24">terminal</span>
-							Git & Github
-						</li>
+					<ul className={styles.icon}>
+						<li><img src={html} alt="html" />HTML</li>
+						<li><img src={css} alt="css" />CSS</li>
+						<li><img src={javascript} alt="javascript" />Javascript</li>
+						<li><img src={react} alt="react" />React</li>
+						<li><img src={git} alt="git" />Git & Github</li>
 					</ul>
 				</div>
 
