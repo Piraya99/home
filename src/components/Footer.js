@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from'./Footer.module.css';
 
-function Footer() {
+export default function Footer() {
 	return (
 		<div className={styles.footer}>
 			<div>&copy; Piraya Sanpakij 2023</div>
@@ -9,5 +9,3 @@ function Footer() {
 		</div>
 	);
 };
-
-export default Footer;

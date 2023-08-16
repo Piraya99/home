@@ -7,7 +7,7 @@ import javascript from '../img/icon/javascript.png';
 import react from '../img/icon/react.png';
 import git from '../img/icon/git.png';
 
-function Feature(props) {
+export default function Feature(props) {
 	return (
 		<div className="feature">
 			<div className="container">
@@ -70,5 +70,3 @@ function Feature(props) {
 		</div>
 		);
 };
-
-export default Feature;

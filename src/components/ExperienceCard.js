@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ExperienceCard(props) {
+export default function ExperienceCard(props) {
 	return (
 		<tr> 
 			<td>
@@ -10,5 +10,3 @@ function ExperienceCard(props) {
 		</tr>
 	);
 };
-
-export default ExperienceCard;

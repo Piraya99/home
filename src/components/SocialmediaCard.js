@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SocialmediaCard.module.css';
 
-function SocialmediaCard(props) {
+export default function SocialmediaCard(props) {
 	return (
 		<div className={styles.socialmediaCard}>
 		<a href={props.socialmediaObject.link} target="_blank" rel="noreferrer">
@@ -15,6 +15,4 @@ function SocialmediaCard(props) {
 		</div>
 	);
 };
-
-export default SocialmediaCard;
 
