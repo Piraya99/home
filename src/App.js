@@ -5,9 +5,10 @@ import Navbar from './components/Navbar';
 import Bio from './components/Bio';
 import Feature from './components/Feature';
 import Experience from './components/Experience';
+import ProjectThumbContainer from './components/ProjectThumbContainer';
 import Footer from './components/Footer';
 
-function App() {
+export default function App() {
 
   // Toggle Language Function
   const [french, setFrench] = useState(false);
@@ -18,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Navbar french={french}/>
+        < Navbar french={french} />
 
         <button onClick={handleClick} className="languagePicker">
           <span className="material-icons md-18">language</span>
@@ -27,14 +28,13 @@ function App() {
         </button>
       </header>
       <main>
-        <Bio french={french}/>
-        <Feature french={french}/>
-        <Experience french={french}/>
+        < Bio french={french} />
+        < Feature french={french} />
+        < Experience french={french} />
+        < ProjectThumbContainer french={french} />
       </main>
 
       <Footer french={french}/>
     </div>
   );
-}
-
-export default App;
+};

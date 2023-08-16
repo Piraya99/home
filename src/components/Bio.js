@@ -1,11 +1,11 @@
 import React from 'react';
-import profilePhoto from './img/profilephoto.jpeg';
+import profilePhoto from '../img/profilephoto.jpeg';
 import styles from './Bio.module.css';
-import {bio} from './bioData';
+import { bio } from './bioData';
 
 import Socialmedia from './Socialmedia';
 
-function Bio(props) {
+export default function Bio(props) {
 	return (
 		<div className={styles.bio}>
 
@@ -27,5 +27,3 @@ function Bio(props) {
 		</div>
 	);
 };
-
-export default Bio;

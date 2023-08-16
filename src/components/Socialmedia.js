@@ -7,7 +7,7 @@ function Socialmedia(props) {
 	return (
 	    <div>
 	      {socialmedias.map(socialmedia => 
-	    <SocialmediaCard socialmediaObject = {socialmedia} />
+	    <SocialmediaCard socialmediaObject={socialmedia} />
 	  )}
 	    </div>
 	)

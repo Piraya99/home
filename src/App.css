@@ -199,3 +199,14 @@ strong {
   fill: #dd2a7b;
 }
 
+/* Project Thumb Rulesets */
+
+#projects h4 {
+  padding: 0;
+}
+
+.project {
+  width: 30%;
+  padding-bottom: 40px;
+}
+

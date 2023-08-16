@@ -5,7 +5,7 @@ import { studies } from './experienceData';
 
 import ExperienceCard from './ExperienceCard';
 
-function Experience(props) {
+export default function Experience(props) {
 	return (
 		<div className={styles.experience}>
 			<div className="container">
@@ -22,7 +22,7 @@ function Experience(props) {
 							</thead>
 							<tbody>
 								{works.map(work => 
-	    							<ExperienceCard experienceObject = {work} />
+	    							<ExperienceCard experienceObject={work} />
 	  							)}
 							</tbody>
 						</table>
@@ -39,7 +39,7 @@ function Experience(props) {
 							</thead>
 							<tbody>
 								{studies.map(study => 
-	    							<ExperienceCard experienceObject = {study} />
+	    							<ExperienceCard experienceObject={study} />
 	  							)}
 							</tbody>
 						</table>
@@ -48,5 +48,3 @@ function Experience(props) {
 		</div>
 	);
 };
-
-export default Experience;
