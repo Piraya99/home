@@ -14,7 +14,7 @@ export const projects = [
 		},
 		{
 			title: 'Home Switch Home',
-			subtitle: ['Circular Economy Platform Design', "Conception d'une plateforme d'économie circulaire"],
+			subtitle: ['Circular Economy Platform Design', "Conception d'une plateforme"],
 			src: image2,
 			link: ''
 		},

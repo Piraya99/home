@@ -22,7 +22,7 @@ export default function Experience(props) {
 							</thead>
 							<tbody>
 								{works.map(work => 
-	    							<ExperienceCard experienceObject={work} />
+	    							<ExperienceCard french={props.french} experienceObject={work} />
 	  							)}
 							</tbody>
 						</table>
@@ -39,7 +39,7 @@ export default function Experience(props) {
 							</thead>
 							<tbody>
 								{studies.map(study => 
-	    							<ExperienceCard experienceObject={study} />
+	    							<ExperienceCard french={props.french} experienceObject={study} />
 	  							)}
 							</tbody>
 						</table>
