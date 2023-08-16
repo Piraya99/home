@@ -17,7 +17,7 @@ export default function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" id="top">
       <header>
         < Navbar french={french} />
 
