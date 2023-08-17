@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 import Navbar from './components/Navbar';
-import Bio from './components/Bio';
-import Feature from './components/Feature';
-import Experience from './components/Experience';
-import ProjectThumbContainer from './components/ProjectThumbContainer';
+import Home from './components/Home';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -20,20 +17,14 @@ export default function App() {
     <div className="App" id="top">
       <header>
         < Navbar french={french} />
-
+        {/* Toggle Language Button */}
         <button onClick={handleClick} className="languagePicker">
           <span className="material-icons md-18">language</span>
           <span>{french ? 'Français' : 'English'}</span>
           <span className="material-icons md-18">expand_more</span>
         </button>
       </header>
-      <main>
-        < Bio french={french} />
-        < Feature french={french} />
-        < Experience french={french} />
-        < ProjectThumbContainer french={french} />
-      </main>
-
+      <Home french={french}/>
       <Footer french={french}/>
     </div>
   );

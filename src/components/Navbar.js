@@ -5,8 +5,8 @@ export default function Navbar(props) {
 	return (
 		<nav className={styles.nav}>
 	        <ul>
-	          <li><a href="#timeline">{props.french ? 'Parcours' : 'Experiences'}</a></li>
-	          <li><a href="#portfolio">{props.french ? 'Projets' : 'Projects'}</a></li>
+	          <li><a href="#experience">{props.french ? 'Parcours' : 'Experiences'}</a></li>
+	          <li><a href="#projects">{props.french ? 'Projets' : 'Projects'}</a></li>
 	        </ul>
         </nav>
 	);

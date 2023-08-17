@@ -29,6 +29,7 @@ img {
 
 a, a:link {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -37,6 +38,10 @@ a:hover {
 
 a:visited {
   color: inherit;
+}
+
+.anchor {
+    scroll-margin-top: 90px;
 }
 
 ul {

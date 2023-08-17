@@ -7,7 +7,7 @@ import ExperienceCard from './ExperienceCard';
 
 export default function Experience(props) {
 	return (
-		<div className={styles.experience}>
+		<section id="experience" className="anchor">
 			<div className="container">
 					
 					<div className="table-left">
@@ -45,6 +45,6 @@ export default function Experience(props) {
 						</table>
 					</div>
 				</div>
-		</div>
+		</section>
 	);
 };

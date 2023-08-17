@@ -5,7 +5,7 @@ import { projects } from './projectData';
 
 export default function ProjectThumbContainer(props) {
 	return (
-		<section>
+		<section id="projects" className="anchor">
 			<h3>Portfolio</h3>
 			<div className="container" id="projects">
 			    {projects.map(project => 
