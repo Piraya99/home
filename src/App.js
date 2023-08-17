@@ -3,6 +3,7 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
         </button>
       </header>
       <Home french={french}/>
+      <Contact french={french}/>
       <Footer french={french}/>
     </div>
   );

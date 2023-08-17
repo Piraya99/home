@@ -1,0 +1,33 @@
+div.contact img {
+	position:absolute;
+    z-index:0;
+}
+
+div.contact div{
+	position: relative;
+    z-index:1;
+    padding: 40px;
+}
+
+div.contact h3 {
+	position: relative;
+	margin: 0 auto;
+	color: var(--main-beige);
+	font-size: 1.75rem;
+	padding: 20px;
+}
+
+div.contact p {
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1.25rem;
+	padding: 12px;
+}
+
+.email {
+	font-weight: 700;
+	color: var(--main-darkgreen);
+}
+
+
