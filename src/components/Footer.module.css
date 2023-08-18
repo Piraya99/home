@@ -1,11 +1,20 @@
 .footer {
   height: 80px;
-  background-color: var(--main-lightgrey);
+  background-color: var(--main-darkgreen);
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 60px;
   padding: 0 10%;
   position: relative;
-  top: 80px;
+  top: 0;
 }
+
+.footer p {
+  color: var(--background-color);
+}
+
+.footer a {
+  color: var(--background-color);
+}
+

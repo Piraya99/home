@@ -1,12 +1,14 @@
 div.contact img {
 	position:absolute;
     z-index:0;
+    height: 300px;
+    width: 100%;
 }
 
 div.contact div{
 	position: relative;
     z-index:1;
-    padding: 40px;
+    padding: 50px;
 }
 
 div.contact h3 {
@@ -14,7 +16,7 @@ div.contact h3 {
 	margin: 0 auto;
 	color: var(--main-beige);
 	font-size: 1.75rem;
-	padding: 20px;
+	padding-bottom: 20px;
 }
 
 div.contact p {
@@ -22,12 +24,16 @@ div.contact p {
 	margin: 0 auto;
 	text-align: center;
 	font-size: 1.25rem;
-	padding: 12px;
+	padding-bottom: 15px;
 }
 
 .email {
 	font-weight: 700;
 	color: var(--main-darkgreen);
+	background-color: var(--background-color);
+	border-radius: 20px;
+	padding: 12px 10px 0;
+	width: 250px;
 }
 
 

@@ -12,10 +12,6 @@ nav li {
   padding-right: 40px;
 }
 
-nav a:link {
-  color: var(--main-darkgreen);
-}
-
-nav a:link {
+.navbar a:link {
   color: var(--main-darkgreen);
 }

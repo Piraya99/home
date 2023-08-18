@@ -8,9 +8,12 @@ export default function Contact(props) {
 			<img src={bgContact} alt="bgContact" />
 			<div>
 				<h3>{props.french ? "Travaillez avec moi" : "Work with me"}</h3>
-				<p>{props.french ? "Me contacter pour parler de votre projet." : 
-								"Contact and tell me about your project"}</p>
-				<p className={styles.email}>pirayatarn@gmail.com</p>
+				<p>{props.french ? "Contactez moi pour parler de votre projet !" : 
+								"Contact me and let's talk about your project!"}</p>
+				<p className={styles.email}>
+					<span className="material-icons md-24 material-symbols-outlined">mail</span>
+					pirayatarn@gmail.com
+				</p>
 			</div>
 		</div>
 	);

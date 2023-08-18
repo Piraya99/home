@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
+/* Import Icons */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
 @import url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css');
 
 
@@ -76,6 +78,15 @@ button span.material-icons {
 .material-icons.md-48 {
   font-size: 48px;
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 4  00,
+  'GRAD' 0,
+  'opsz' 48
+}
+
 
 /* Header Rulesets*/
 
@@ -174,6 +185,7 @@ h5 {
 p {
   font-weight: 400;
   max-width: 60ch;
+  font-size: 1rem;
 }
 
 strong {
