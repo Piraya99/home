@@ -4,7 +4,10 @@ export default function ExperienceCard(props) {
 	return (
 		<tr> 
 			<td>
-				<strong>{props.experienceObject.title}</strong><br />{props.experienceObject.place}
+				<strong>
+					{props.french ? props.experienceObject.title[1] : props.experienceObject.title[0]}
+				</strong><br />
+					{props.french ? props.experienceObject.place[1] : props.experienceObject.place[0]}
 			</td>
 			<td className="date">
 				{props.french ? props.experienceObject.start[1] : props.experienceObject.start[0]}

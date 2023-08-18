@@ -18,9 +18,9 @@ export default function App() {
   };
 
     return (
-        <div className="app">
+        <div className="app" id="top">
             <Router>
-                    <header id="top">
+                    <header>
                         <Navbar french={french} />
 
                         {/* Toggle Language Button */}
@@ -32,7 +32,7 @@ export default function App() {
                     </header>
 
                 <Routes>
-                        <Route exact path='/' exact element={<Home />} />
+                        <Route exact path='/' exact element={<Home french={french} />} />
                         <Route path='/projectpage' element={<ProjectPage />} />
                 </Routes>
             </Router>
