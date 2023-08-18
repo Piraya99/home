@@ -5,7 +5,7 @@
 @import url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css');
 
 
-.App {
+div.app {
   font-size: 16px;
   font-family: 'Lato', sans-serif;
 }

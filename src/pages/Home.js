@@ -1,18 +1,17 @@
 import React from 'react';
 
-import Bio from './Bio';
-import Feature from './Feature';
-import Experience from './Experience';
-import ProjectThumbContainer from './ProjectThumbContainer';
+import Bio from '../components/Bio';
+import Feature from '../components/Feature';
+import Experience from '../components/Experience';
+import ProjectThumbContainer from '../components/ProjectThumbContainer';
 
 export default function Home(props) {
 	return (
-		<main>
+		<div>
 	        < Bio french={props.french} />
 	        < Feature french={props.french} />
 	        < Experience french={props.french} />
 	        < ProjectThumbContainer french={props.french} />
-      	</main>
-
+      	</div>
 	);
 };
