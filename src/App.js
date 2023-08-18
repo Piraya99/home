@@ -32,8 +32,8 @@ export default function App() {
                     </header>
 
                 <Routes>
-                        <Route exact path='/' exact element={<Home french={french} />} />
-                        <Route path='/projectpage' element={<ProjectPage />} />
+                        <Route exact path='/home' exact element={<Home french={french} />} />
+                        <Route path='/home/projectpage' element={<ProjectPage french={french}/>} />
                 </Routes>
             </Router>
 
