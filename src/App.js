@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
+import ScrollToTop from "./functions/scrollToTop";
 
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
@@ -26,6 +27,7 @@ export default function App() {
     return (
         <div className="app" id="top">
             <Router>
+                <ScrollToTop />
                     <header>
                         <Navbar french={french} />
 
