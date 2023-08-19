@@ -8,7 +8,13 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
-import ProjectPage from './pages/ProjectPage';
+
+import QueueFree from './pages/QueueFree';
+import HomeSwitchHome from './pages/HomeSwitchHome';
+import Astromania from './pages/Astromania';
+import Maynooth from './pages/Maynooth';
+import LaRousseliere from './pages/LaRousseliere';
+import FocalDesign from './pages/FocalDesign';
  
 export default function App() {
     // Toggle Language Function
@@ -33,7 +39,12 @@ export default function App() {
 
                 <Routes>
                         <Route exact path='/home' exact element={<Home french={french} />} />
-                        <Route path='/home/projectpage' element={<ProjectPage french={french}/>} />
+                        <Route path='/home/queuefree' element={<QueueFree french={french}/>} />
+                        <Route path='/home/homeswitchhome' element={<HomeSwitchHome french={french}/>} />
+                        <Route path='/home/astromania' element={<Astromania french={french}/>} />
+                        <Route path='/home/maynooth' element={<Maynooth french={french}/>} />
+                        <Route path='/home/larousseliere' element={<LaRousseliere french={french}/>} />
+                        <Route path='/home/focaldesign' element={<FocalDesign french={french}/>} />
                 </Routes>
             </Router>
 
