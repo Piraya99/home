@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import ScrollToTop from "./functions/scrollToTop";
@@ -40,7 +40,7 @@ export default function App() {
                     </header>
 
                 <Routes>
-                        <Route exact path='/home' exact element={<Home french={french} />} />
+                        <Route exact path='/' exact element={<Home french={french} />} />
                         <Route path='/queuefree' element={<QueueFree french={french}/>} />
                         <Route path='/homeswitchhome' element={<HomeSwitchHome french={french}/>} />
                         <Route path='/astromania' element={<Astromania french={french}/>} />

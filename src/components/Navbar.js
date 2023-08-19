@@ -9,7 +9,7 @@ export default function Navbar(props) {
 	return (
 		<nav className={styles.navbar}>
 	        <ul>
-	        	<li><Link to="/home">Home</Link></li>
+	        	<li><Link to="/">Home</Link></li>
 	          	<li><a href="#experience">{props.french ? 'Parcours' : 'Experiences'}</a></li>
 	          	<li><a href="#projects">{props.french ? 'Projets' : 'Projects'}</a></li>
 	        </ul>
