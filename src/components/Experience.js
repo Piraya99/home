@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Experience.module.css';
-import { works } from './experienceData';
-import { studies } from './experienceData';
+import { works } from '../data/experienceData';
+import { studies } from '../data/experienceData';
 
 import ExperienceCard from './ExperienceCard';
 

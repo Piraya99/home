@@ -1,5 +1,5 @@
 import React from 'react';
-import { socialmedias } from './socialmediaData';	
+import { socialmedias } from '../data/socialmediaData';	
 
 import SocialmediaCard from './SocialmediaCard';
 

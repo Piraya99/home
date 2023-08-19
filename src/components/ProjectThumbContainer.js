@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ProjectThumb from './ProjectThumb';
-import { projects } from './projectData';
+import { projects } from '../data/projectData';
 
 export default function ProjectThumbContainer(props) {
 	return (

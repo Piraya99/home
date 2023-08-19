@@ -1,7 +1,7 @@
 import React from 'react';
 import profilePhoto from '../img/profilephoto.jpeg';
 import styles from './Bio.module.css';
-import { bio } from './bioData';
+import { bio } from '../data/bioData';
 
 import Socialmedia from './Socialmedia';
 
