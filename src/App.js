@@ -41,12 +41,12 @@ export default function App() {
 
                 <Routes>
                         <Route exact path='/home' exact element={<Home french={french} />} />
-                        <Route path='/home/queuefree' element={<QueueFree french={french}/>} />
-                        <Route path='/home/homeswitchhome' element={<HomeSwitchHome french={french}/>} />
-                        <Route path='/home/astromania' element={<Astromania french={french}/>} />
-                        <Route path='/home/maynooth' element={<Maynooth french={french}/>} />
-                        <Route path='/home/larousseliere' element={<LaRousseliere french={french}/>} />
-                        <Route path='/home/focaldesign' element={<FocalDesign french={french}/>} />
+                        <Route path='/queuefree' element={<QueueFree french={french}/>} />
+                        <Route path='/homeswitchhome' element={<HomeSwitchHome french={french}/>} />
+                        <Route path='/astromania' element={<Astromania french={french}/>} />
+                        <Route path='/maynooth' element={<Maynooth french={french}/>} />
+                        <Route path='/larousseliere' element={<LaRousseliere french={french}/>} />
+                        <Route path='/focaldesign' element={<FocalDesign french={french}/>} />
                 </Routes>
             </Router>
 
