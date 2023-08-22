@@ -16,6 +16,8 @@ import Astromania from './pages/Astromania';
 import Maynooth from './pages/Maynooth';
 import LaRousseliere from './pages/LaRousseliere';
 import FocalDesign from './pages/FocalDesign';
+
+import signature from './img/signature.png';
  
 export default function App() {
     // Toggle Language Function
@@ -29,14 +31,18 @@ export default function App() {
             <Router>
                 <ScrollToTop />
                     <header>
-                        <Navbar french={french} />
+                        
+                        <img className="signature" src={signature} alt="signature" />
+                        <span className="headerRight"> 
+                            <Navbar french={french} />
 
-                        {/* Toggle Language Button */}
-                        <button onClick={handleClick} className="languagePicker">
-                          <span className="material-icons md-18">language</span>
-                          <span>{french ? 'Français' : 'English'}</span>
-                          <span className="material-icons md-18">expand_more</span>
-                        </button>
+                            {/* Toggle Language Button */}
+                            <button onClick={handleClick} className="languagePicker">
+                              <span className="material-icons md-18">language</span>
+                              <span>{french ? 'Français' : 'English'}</span>
+                              <span className="material-icons md-18">expand_more</span>
+                            </button>
+                        </span>
                     </header>
 
                 <Routes>
