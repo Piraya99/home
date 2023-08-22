@@ -4,6 +4,6 @@ import { projects } from '../data/projectData';
 
 export default function Maynooth(props) {
 	return (
-		<ProjectPage project={projects[3]} french={props.french}/>
+		<ProjectPage french={props.french} project={projects[3]} />
 	)
 }

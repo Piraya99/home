@@ -4,6 +4,6 @@ import { projects } from '../data/projectData';
 
 export default function HomeSwitchHome(props) {
 	return (
-		<ProjectPage project={projects[1]} french={props.french}/>
+		<ProjectPage french={props.french} project={projects[1]}/>
 	)
 }
