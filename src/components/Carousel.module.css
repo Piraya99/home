@@ -1,0 +1,55 @@
+.carousel {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.arrows {
+	position: relative;
+	top: 50vh;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.arrowLeft, .arrowRight {
+	width: 32px;
+	height: auto;
+	cursor: pointer;
+	box-shadow: 0 0 9px 3px rgba(41,41,41,.125);
+	border-radius: 50%;
+}
+
+.arrowLeft {
+	left: 150px;
+}
+.arrowRight {
+	right: 150px;
+}
+
+.slides {
+}
+
+.slides img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.dotsContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.dots {
+	font-size: 24px;
+	cursor: pointer;
+	margin: 0 3px;
+	color: var(--main-darkgrey);
+}
+
+
+
+

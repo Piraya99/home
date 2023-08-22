@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './ProjectPage.module.css';
 
+import Carousel from '../components/Carousel';
+
 export default function ProjectPage(props) {
 	return (
 		<div className={styles.projectpage}>
@@ -17,7 +19,7 @@ export default function ProjectPage(props) {
 					<p>{props.french ? 'Outils : ' : 'Tools:'} {props.project.tools}</p>
 				</div>
 			</div>
-			<img src={props.project.src} alt={props.project.title} />
+			< Carousel project={props.project}/>
 		</div>
 	);
 };
