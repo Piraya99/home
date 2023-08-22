@@ -1,7 +1,3 @@
-.socialmediaCard {
-  display: inline-flex;
-}
-
 svg {
   fill: var(--main-beige);
   width: 32px;

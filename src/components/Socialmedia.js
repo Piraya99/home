@@ -1,11 +1,11 @@
 import React from 'react';
-import { socialmedias } from '../data/socialmediaData';	
+import { socialmedias } from '../data/socialmediaData';
 
 import SocialmediaCard from './SocialmediaCard';
 
 export default function Socialmedia(props) {
 	return (
-	    <div className="socialmedia">
+	    <div>
 	      {socialmedias.map(socialmedia => 
 	    <SocialmediaCard socialmediaObject={socialmedia} />
 	  )}
