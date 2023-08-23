@@ -87,40 +87,8 @@ button span.material-icons {
   'opsz' 48
 }
 
-
-/* Header Rulesets*/
-
-header {
-  margin: 0;
-  padding: 0 10%;
-  background-color: var(--background-color);
-  position: sticky;
-  top: 0;
-  box-shadow: 0 0 9px 3px rgba(41,41,41,.125);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.signature {
-  width: 220px;
-  height: 26.4px;
-}
-
-/* Language Picker */
-.languagePicker {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,.15);
-  border-radius: 10px;
-}
-
-button span{
-  font-size: 0.75rem;
-  margin: 0;
-  padding: 0;
+.navbar a:link {
+  color: var(--main-darkgreen);
 }
 
 main {

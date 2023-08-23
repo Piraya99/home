@@ -2,7 +2,7 @@ import React from 'react';
 
 import Bio from '../components/Bio';
 import Feature from '../components/Feature';
-import Experience from '../components/Experience';
+import Experience from './Experience';
 import ProjectThumbContainer from '../components/ProjectThumbContainer';
 
 export default function Home(props) {

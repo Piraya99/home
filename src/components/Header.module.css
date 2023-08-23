@@ -1,0 +1,61 @@
+header {
+  margin: 0;
+  padding: 0 10%;
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 9px 3px rgba(41,41,41,.125);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.signature {
+  width: 220px;
+  height: 26.4px;
+  cursor: pointer;
+}
+
+.navbar a:link {
+  color: var(--main-darkgreen);
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
+/* Language Picker */
+.languagePicker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 10px;
+}
+
+button {
+  height: 30px;
+  color: #000;
+}
+
+button span{
+  font-size: 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav li {
+  padding-right: 40px;
+}

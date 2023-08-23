@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from "react-router-dom"; 
 
 import './App.css';
+import styles from './components/Header.module.css';
+
 import ScrollToTop from "./functions/scrollToTop";
 
-import Navbar from './components/Navbar';
+import NavItem from './components/NavItem';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
 
+import Experience from './pages/Experience';
+import Projects from './pages/Projects';
+
+// ImportProject Pages
 import QueueFree from './pages/QueueFree';
 import HomeSwitchHome from './pages/HomeSwitchHome';
 import Astromania from './pages/Astromania';
@@ -32,12 +39,12 @@ export default function App() {
                 <ScrollToTop />
                     <header>
                         
-                        <img className="signature" src={signature} alt="signature" />
-                        <span className="headerRight"> 
-                            <Navbar french={french} />
+                        <Link to="/"><img className={styles.signature} src={signature} alt="signature" /></Link>
+                        <span className={styles.headerRight}> 
+                            <NavItem french={french} />
 
                             {/* Toggle Language Button */}
-                            <button onClick={handleClick} className="languagePicker">
+                            <button onClick={handleClick} className={styles.languagePicker}>
                               <span className="material-icons md-18">language</span>
                               <span>{french ? 'Français' : 'English'}</span>
                               <span className="material-icons md-18">expand_more</span>
@@ -47,6 +54,8 @@ export default function App() {
 
                 <Routes>
                         <Route exact path='/' exact element={<Home french={french} />} />
+                        <Route path='/experience' element={<Experience french={french}/>} />
+                        <Route path='/projects' element={<Projects french={french}/>} />
                         <Route path='/queuefree' element={<QueueFree french={french}/>} />
                         <Route path='/homeswitchhome' element={<HomeSwitchHome french={french}/>} />
                         <Route path='/astromania' element={<Astromania french={french}/>} />

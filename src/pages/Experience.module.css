@@ -1,0 +1,41 @@
+table {
+  padding-bottom: 20px;
+}
+
+th {
+  padding: 0 20px 20px;
+}
+
+td {
+  padding: 0 20px 20px;
+}
+
+td strong{
+  color: inherit;
+  transition: color 500ms ease-out 2ms;;
+}
+
+td strong:hover {
+  color: var(--main-darkgreen);
+}
+
+td.date {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media only screen and  (max-width: 480px) {
+      
+  th {
+    padding: 10px 0 0;
+  }
+
+  td {
+    padding: 0 5px 20px 0;
+  }
+
+  td.date {
+    padding-right: 0;
+  }
+}

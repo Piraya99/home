@@ -6,7 +6,7 @@ import { programlangs, worldlangs, skills } from '../data/featureData';
 
 export default function Feature(props) {
 	return (
-		<div className="feature">
+		<div className={styles.feature}>
 			<div className="container">
 
 				<div className="box">
