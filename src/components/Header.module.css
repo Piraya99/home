@@ -9,6 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-flow: row wrap;
+  z-index: 2;
 }
 
 .signature {

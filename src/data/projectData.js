@@ -8,10 +8,16 @@ import focaldesignThumb from '../img/project/focaldesign-thumb.jpg';
 
 // Carousel Images
 import queuefree1 from '../img/project/queuefree1.png';
+import homeswitchhome1 from '../img/project/homeswitchhome1.jpg';
+import astromania1 from '../img/project/astromania1.png';
+import astromania2 from '../img/project/astromania2.png';
+import astromania3 from '../img/project/astromania3.png';
 import maynooth1 from '../img/project/maynooth1.png';
 import maynooth2 from '../img/project/maynooth2.png';
 import maynooth3 from '../img/project/maynooth3.png';
-
+import larousseliere1 from '../img/project/larousseliere1.jpg';
+import larousseliere2 from '../img/project/larousseliere2.jpg';
+import focaldesign1 from '../img/project/focaldesign1.jpg';
 
 export const projects = [
 	{
@@ -35,7 +41,7 @@ export const projects = [
 		year: '2021',
 		client:'My Digital School',
 		tools: 'Adobe Illustrator, Xd',
-		slides: [homeswitchhomeThumb]
+		slides: [homeswitchhome1]
 		
 	},
 	{
@@ -47,7 +53,7 @@ export const projects = [
 		year: '2022',
 		client:'My Digital School',
 		tools: 'Adobe Illustrator, Wordpress',
-		slides: [astromaniaThumb]
+		slides: [astromania1, astromania2, astromania3]
 	},
 	{
 		title: 'Maynooth',
@@ -69,7 +75,7 @@ export const projects = [
 		year: '2022',
 		client:'Domaine de la Rousselière',
 		tools: 'Adobe Xd',
-		slides: [larousseliereThumb]
+		slides: [larousseliere1, larousseliere2]
 		
 	},
 	{
@@ -81,6 +87,6 @@ export const projects = [
 		year: '2021',
 		client:'Focal Design',
 		tools: 'Wordpress, Adobe Illustrator',
-		slides: [focaldesignThumb]
+		slides: [focaldesign1]
 	},
 ];

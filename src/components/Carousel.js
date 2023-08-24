@@ -19,18 +19,18 @@ export default function Carousel(props) {
 	};
 
 	return (
-		<div className={styles.carousel}>
-			{ props.project.slides.length > 1 &&
-				<div className={styles.arrows}>	
-					<img className={styles.arrowLeft} src={ArrowLeftCircleFill} alt="arrow-left" onClick={goToPrevious}/>
-					<img className={styles.arrowRight} src={ArrowRightCircleFill} alt="arrow-right" onClick={goToNext}/>
+		<div>
+			<div className={styles.carousel}>
+				{ props.project.slides.length > 1 &&
+					<div className={styles.arrows}>	
+						<img className={styles.arrowLeft} src={ArrowLeftCircleFill} alt="arrow-left" onClick={goToPrevious}/>
+						<img className={styles.arrowRight} src={ArrowRightCircleFill} alt="arrow-right" onClick={goToNext}/>
+					</div>
+				}
+				<div className={styles.slides}>
+					<img src={props.project.slides[currentIndex]} alt={props.project.name} />
 				</div>
-			}
-			<div className={styles.slides}>
-				<img src={props.project.slides[currentIndex]} alt={props.project.name} />
-
 			</div>
-			
 			{ props.project.slides.length > 1 &&
 				<div className={styles.dotsContainer}>
 					{props.project.slides.map((slides, slideIndex) => (

@@ -2,16 +2,21 @@
 	width: 90%;
 	height: auto;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+	position:relative;
 }
 
 .arrows {
-	position: relative;
-	top: 50vh;
-	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
 	justify-content: space-between;
-	padding: 0 20px;
+	z-index: 1;
 }
 
 .arrowLeft, .arrowRight {
@@ -20,22 +25,21 @@
 	cursor: pointer;
 	box-shadow: 0 0 9px 3px rgba(41,41,41,.125);
 	border-radius: 50%;
+	background-color: var(--main-beige);
 }
 
 .arrowLeft {
-	left: 150px;
-}
-.arrowRight {
-	right: 150px;
+	margin-left: 2%;
 }
 
-.slides {
+.arrowRight {
+	margin-right: 2%;
 }
 
 .slides img {
 	width: 100%;
 	height: auto;
-	margin-bottom: 10px;
+	box-shadow: 0 0 9px 3px rgba(41,41,41,.125);
 }
 
 .dotsContainer {
