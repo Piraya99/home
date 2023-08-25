@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link } from "react-router-dom"; 
 
 import './App.css';
@@ -56,12 +56,12 @@ export default function App() {
                         <Route exact path='/' exact element={<Home french={french} />} />
                         <Route path='/experience' element={<Experience french={french}/>} />
                         <Route path='/projects' element={<Projects french={french}/>} />
-                        <Route path='/queuefree' element={<QueueFree french={french}/>} />
-                        <Route path='/homeswitchhome' element={<HomeSwitchHome french={french}/>} />
-                        <Route path='/astromania' element={<Astromania french={french}/>} />
-                        <Route path='/maynooth' element={<Maynooth french={french}/>} />
-                        <Route path='/larousseliere' element={<LaRousseliere french={french}/>} />
-                        <Route path='/focaldesign' element={<FocalDesign french={french}/>} />
+                        <Route path='/projects/queuefree' element={<QueueFree french={french}/>} />
+                        <Route path='/projects/homeswitchhome' element={<HomeSwitchHome french={french}/>} />
+                        <Route path='/projects/astromania' element={<Astromania french={french}/>} />
+                        <Route path='/projects/maynooth' element={<Maynooth french={french}/>} />
+                        <Route path='/projects/larousseliere' element={<LaRousseliere french={french}/>} />
+                        <Route path='/projects/focaldesign' element={<FocalDesign french={french}/>} />
                 </Routes>
             </Router>
 
