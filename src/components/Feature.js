@@ -11,7 +11,7 @@ export default function Feature(props) {
 
 				<div className="box">
 					<h4>{props.french ? "Languages Techniques" : "Programming Languages"}</h4>
-					<ul className={styles.icon}>
+					<ul className={styles.programlang}>
 						{programlangs.map(programlang =>
 							<li><img src={programlang.src} alt={programlang.name} />{programlang.name}</li>
 						)}
@@ -32,10 +32,10 @@ export default function Feature(props) {
 
 				<div className="box">
 					<h4>{props.french ? "Compétences" : "Skills"}</h4>
-					<ul className={styles.longlist}>
+					<ul className={styles.skill}>
 						{skills.map(skill =>
 						<li>
-							<span className="material-icons md-24">{skill.icon}</span>
+							<img src={skill.icon} alt="" />
 							{props.french ? skill.name[1] : skill.name[0]}
 						</li>
 						)}

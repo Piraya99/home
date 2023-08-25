@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap');
-/* Import Icons */
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
 @import url('https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css');
 
 
@@ -53,39 +50,12 @@ ul {
 }
 
 /* Icon Styling */
-.material-icons, .fi {
+.fi {
   margin-right: 10px;
 }
-button span.material-icons {
+button img {
   margin-right: 5px;
-}
-
-.material-icons {
-  vertical-align: middle;
-}
-
-.material-icons.md-18 {
-  font-size: 18px;
-}
-
-.material-icons.md-24 {
-  font-size: 24px;
-}
-
-.material-icons.md-36 {
-  font-size: 36px;
-}
-
-.material-icons.md-48 {
-  font-size: 48px;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 4  00,
-  'GRAD' 0,
-  'opsz' 48
+  width: 18px;
 }
 
 .navbar a:link {

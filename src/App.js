@@ -25,6 +25,8 @@ import LaRousseliere from './pages/LaRousseliere';
 import FocalDesign from './pages/FocalDesign';
 
 import signature from './img/signature.png';
+import language from './img/icon/language.svg';
+import expand from './img/icon/expand.svg';
  
 export default function App() {
     // Toggle Language Function
@@ -34,10 +36,10 @@ export default function App() {
   };
 
     return (
-        <div className="app" id="top">
+        <div className="app">
             <Router>
                 <ScrollToTop />
-                    <header>
+                    <header id="top">
                         
                         <Link to="/"><img className={styles.signature} src={signature} alt="signature" /></Link>
                         <span className={styles.headerRight}> 
@@ -45,9 +47,9 @@ export default function App() {
 
                             {/* Toggle Language Button */}
                             <button onClick={handleClick} className={styles.languagePicker}>
-                              <span className="material-icons md-18">language</span>
+                              <img src={language} alt="languageIcon" />
                               <span>{french ? 'Français' : 'English'}</span>
-                              <span className="material-icons md-18">expand_more</span>
+                              <img src={expand} alt="expand" />
                             </button>
                         </span>
                     </header>
