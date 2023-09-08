@@ -18,3 +18,8 @@
   color: var(--background-color);
 }
 
+@media (max-width: 480px) {
+  .footer {
+    margin-top: 40px;
+  }
+}

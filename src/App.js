@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Link } from "react-router-dom"; 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 
 import './App.css';
-import styles from './components/Header.module.css';
+
 
 import ScrollToTop from "./functions/scrollToTop";
 
-import NavItem from './components/NavItem';
+import Header from './components/Header';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -24,7 +23,6 @@ import Maynooth from './pages/Maynooth';
 import LaRousseliere from './pages/LaRousseliere';
 import FocalDesign from './pages/FocalDesign';
 
-import signature from './img/signature.png';
 import language from './img/icon/language.svg';
 import expand from './img/icon/expand.svg';
  
@@ -39,20 +37,14 @@ export default function App() {
         <div className="app">
             <Router>
                 <ScrollToTop />
-                    <header id="top">
-                        
-                        <Link to="/"><img className={styles.signature} src={signature} alt="signature" /></Link>
-                        <span className={styles.headerRight}> 
-                            <NavItem french={french} />
+                    <Header french={french}/>
 
-                            {/* Toggle Language Button */}
-                            <button onClick={handleClick} className={styles.languagePicker}>
-                              <img src={language} alt="languageIcon" />
-                              <span>{french ? 'Français' : 'English'}</span>
-                              <img src={expand} alt="expand" />
-                            </button>
-                        </span>
-                    </header>
+                    {/* Toggle Language Button */}
+                    <button onClick={handleClick} className="languagePicker">
+                      <img src={language} alt="languageIcon" />
+                      <span>{french ? 'Français' : 'English'}</span>
+                      <img src={expand} alt="expand" />
+                    </button>
 
                 <Routes>
                         <Route exact path='/' exact element={<Home french={french} />} />

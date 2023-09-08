@@ -5,7 +5,7 @@ import Carousel from '../components/Carousel';
 
 export default function ProjectPage(props) {
 	return (
-		<div className={styles.projectpage}>
+		<main className={styles.projectpage}>
 			<div className={styles.container}>
 				<div className={styles.left}>
 					<h3 className={styles.h3}>{props.project.title}</h3>
@@ -20,6 +20,6 @@ export default function ProjectPage(props) {
 				</div>
 			</div>
 			< Carousel project={props.project}/>
-		</div>
+		</main>
 	);
 };

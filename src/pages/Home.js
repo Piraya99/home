@@ -7,11 +7,11 @@ import ProjectThumbContainer from '../components/ProjectThumbContainer';
 
 export default function Home(props) {
 	return (
-		<div>
+		<main>
 	        < Bio french={props.french} />
 	        < Feature french={props.french} />
 	        < Experience french={props.french} />
 	        < ProjectThumbContainer french={props.french} />
-      	</div>
+      	</main>
 	);
 };
