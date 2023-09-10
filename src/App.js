@@ -40,11 +40,13 @@ export default function App() {
                     <Header french={french}/>
 
                     {/* Toggle Language Button */}
-                    <button onClick={handleClick} className="languagePicker">
-                      <img src={language} alt="languageIcon" />
-                      <span>{french ? 'Français' : 'English'}</span>
-                      <img src={expand} alt="expand" />
-                    </button>
+                    <div className="languagePicker">
+                        <button onClick={handleClick}>
+                          <img src={language} alt="languageIcon" />
+                          <span>{french ? 'Français' : 'English'}</span>
+                          <img src={expand} alt="expand" />
+                        </button>
+                    </div>
 
                 <Routes>
                         <Route exact path='/' exact element={<Home french={french} />} />

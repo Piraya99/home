@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 100px;
 }
 
 .bio img {
@@ -13,11 +12,13 @@
 }
 
 @media (max-width: 480px) {
+
   .bio {
     display: block;
     text-align: center;
-    margin-top: 80px;
   }
+
   .bio img {
   }
+  
 }

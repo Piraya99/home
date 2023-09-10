@@ -133,19 +133,21 @@ strong {
 
 /* Language Picker */
 .languagePicker {
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: end;
+  max-width: 1100px}
+
+button {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,.15);
   border-radius: 10px;
-  float: right;
-}
-
-button {
   height: 30px;
   color: #000;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 button span{
@@ -255,4 +257,9 @@ button img {
   .box {
     padding: 0;
   }
+
+  .languagePicker {
+    margin-top: 80px;
+  }
+  
 }
