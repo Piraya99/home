@@ -1,11 +1,10 @@
 .projectpage {
 	width: 90%;
 	padding-bottom: 50px;
-	margin-top: 100px;
 }
 .container {
 	width: 90%;
-	margin: 0 auto;
+	margin: auto;
 	padding: 20px 0;
 }
 

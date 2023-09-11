@@ -7,6 +7,11 @@ header {
   z-index: 3;
 }
 
+.navbar {
+  max-width: 90vw;
+  margin: auto;
+}
+
 header li {
   display: inline-block;
   padding: 0 30px;
@@ -14,7 +19,6 @@ header li {
 
 .menu {
   float: right;
-  box-shadow: 0 0 9px 3px rgba(41,41,41,.125);
 }
 
 .menu a:link {
@@ -36,7 +40,7 @@ header li a {
   width: 220px;
   height: 22px;
   cursor: pointer;
-  padding-top: 25px ;
+  padding-top: 20px;
   padding-bottom: 0;
 }
 
@@ -52,7 +56,7 @@ header li a {
 @media (max-width: 480px) {
 
   .signature {
-    padding: 20px 40px;
+    padding: 20px 10px;
   }
 
   header li {
@@ -63,7 +67,7 @@ header li a {
 
   header li a {
     display: block;
-    padding: 10px 30px 5px;
+    padding: 10px 0;
   }
 
   /* menu */
@@ -72,15 +76,13 @@ header li a {
     position: absolute;
     width: 100%;
     margin: -100px 0 0 -50px;
-    padding: 50px;
     padding-top: 100px;
     list-style: none;
     transform-origin: 0% 0%;
     transform: translate(0, -100%);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     background-color: var(--background-color);
-    max-height: 110px;
-    overflow: hidden;
+    box-shadow: 0 0 9px 3px rgba(41,41,41,.125);
   }
 
   /* menu icon */
@@ -144,5 +146,12 @@ header li a {
   .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:before,
   .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
     top: 0;
+  }
+}
+
+@media only screen and  (max-width: 320px) {
+  .signature {
+    width: 200px;
+    height: 20px;
   }
 }
