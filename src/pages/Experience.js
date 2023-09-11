@@ -6,7 +6,7 @@ import ExperienceCard from '../components/ExperienceCard';
 
 export default function Experience(props) {
 	return (
-		<section id="experience" className="anchor">
+		<main id="experience" className="anchor">
 			<div className="container">
 					
 					<div className="table-left">
@@ -44,6 +44,6 @@ export default function Experience(props) {
 						</table>
 					</div>
 				</div>
-		</section>
+		</main>
 	);
 };

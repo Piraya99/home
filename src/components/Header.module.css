@@ -7,124 +7,142 @@ header {
   z-index: 3;
 }
 
-nav a:link {
+header li {
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.menu {
+  float: right;
+  box-shadow: 0 0 9px 3px rgba(41,41,41,.125);
+}
+
+.menu a:link {
   color: var(--main-darkgreen);
 }
 
-header .menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: var(--background-color);
+.menu a:hover {
+  text-decoration: underline;
 }
 
 header li a {
-  display: block;
-  padding: 20px 20px;
   text-decoration: none;
+  background-color: var(--background-color);
 }
 
-header .signature {
+.signature {
   display: block;
   float: left;
   width: 220px;
   height: 22px;
   cursor: pointer;
-  padding: 20px 40px;
+  padding-top: 25px ;
+  padding-bottom: 0;
 }
 
-/* menu */
-
-header .menu {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
-}
-
-/* menu icon */
-
-header .menuIcon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
-}
-
-header .menuIcon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-}
-
-header .menuIcon .navicon:before,
-header .menuIcon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-header .menuIcon .navicon:before {
-  top: 5px;
-}
-
-header .menuIcon .navicon:after {
-  top: -5px;
-}
-
-/* menu btn */
-
-header .menuBtn {
+.menuIcon {
   display: none;
 }
 
-header .menuBtn:checked ~ .menu {
-  max-height: 240px;
-}
-
-header .menuBtn:checked ~ .menuIcon .navicon {
-  background: transparent;
-}
-
-header .menuBtn:checked ~ .menuIcon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-header .menuBtn:checked ~ .menuIcon .navicon:after {
-  transform: rotate(45deg);
-}
-
-header .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:before,
-header .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
-  top: 0;
+.menuBtn {
+  display: none;
 }
 
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
+
+  .signature {
+    padding: 20px 40px;
+  }
+
   header li {
     float: left;
+    width: 100vw;
+    background-color: var(--background-color);
   }
 
   header li a {
-    padding: 20px 30px;
+    display: block;
+    padding: 10px 30px 5px;
   }
 
-  header .menu {
-    clear: none;
+  /* menu */
+
+  .menuToggle .menu {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 100px;
+    list-style: none;
+    transform-origin: 0% 0%;
+    transform: translate(0, -100%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    background-color: var(--background-color);
+    max-height: 110px;
+    overflow: hidden;
+  }
+
+  /* menu icon */
+
+  .menuIcon {
+    cursor: pointer;
+    display: inline-block;
     float: right;
-    max-height: none;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+    z-index: 2;
   }
 
-  header .menuIcon {
-    display: none;
+  .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+
+  .navicon:before,
+  .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+
+  .navicon:before {
+    top: 5px;
+  }
+
+  .navicon:after {
+    top: -5px;
+  }
+
+  /* menu btn */
+
+  .menuBtn:checked ~ .menu {
+    transform: none;
+  }
+
+  .menuBtn:checked ~ .menuIcon .navicon {
+    background: transparent;
+  }
+
+  .menuBtn:checked ~ .menuIcon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menuBtn:checked ~ .menuIcon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:before,
+  .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
+    top: 0;
   }
 }
