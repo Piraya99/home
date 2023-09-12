@@ -132,10 +132,11 @@ strong {
 
 /* Language Picker */
 .languagePicker {
-  margin: 100px auto 0;
+  margin: 90px auto 0;
   display: flex;
   justify-content: end;
-  max-width: 1100px}
+  max-width: 1100px
+}
 
 button {
   display: flex;
@@ -197,6 +198,12 @@ button img {
   width: 30%;
   padding-bottom: 40px;
   margin-top: 20px;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
 }
 
 @media only screen and (max-width: 1024px){

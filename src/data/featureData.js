@@ -3,6 +3,7 @@ import css from '../img/icon/css.png';
 import javascript from '../img/icon/javascript.png';
 import react from '../img/icon/react.png';
 import git from '../img/icon/git.png';
+import sublime from '../img/icon/sublime.png';
 
 import palette from '../img/icon/palette.svg';
 import laptop from '../img/icon/laptop.svg';
@@ -29,6 +30,10 @@ export const programlangs = [
 	{
 		name: 'Git & Github',
 		src: git
+	},
+	{
+		name: 'Sublime Text',
+		src: sublime
 	}
 ];
 

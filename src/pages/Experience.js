@@ -9,7 +9,7 @@ export default function Experience(props) {
 		<main id="experience" className="anchor">
 			<div className="container">
 					
-					<div className="table-left">
+					<div className="left">
 						<table>
 							<thead>
 								<tr>
@@ -27,7 +27,7 @@ export default function Experience(props) {
 						</table>
 					</div>
 
-					<div className="table-right">
+					<div>
 						<table>
 							<thead>
 								<tr>
