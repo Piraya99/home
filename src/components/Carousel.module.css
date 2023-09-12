@@ -3,20 +3,16 @@
 	height: auto;
 	margin: 0 auto;
 	margin-bottom: 20px;
-	position:relative;
 }
 
 .arrows {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
 	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	top: -300px;
 }
 
 .arrowLeft, .arrowRight {
@@ -54,6 +50,12 @@
 	color: var(--main-darkgrey);
 }
 
+@media (max-width: 700px) {
+	.arrows {
+		position: relative;
+		top: -160px;
+	}
+}
 
 
 
