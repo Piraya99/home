@@ -7,17 +7,19 @@ import larousseliereThumb from '../img/project/larousseliere-thumb.jpg';
 import focaldesignThumb from '../img/project/focaldesign-thumb.jpg';
 
 // Carousel Images
-import queuefree1 from '../img/project/queuefree1.png';
+import queuefree1 from '../img/project/queuefree1.jpg';
+import queuefree2 from '../img/project/queuefree2.png';
 import homeswitchhome1 from '../img/project/homeswitchhome1.jpg';
-import astromania1 from '../img/project/astromania1.png';
-import astromania2 from '../img/project/astromania2.png';
-import astromania3 from '../img/project/astromania3.png';
-import maynooth1 from '../img/project/maynooth1.png';
-import maynooth2 from '../img/project/maynooth2.png';
-import maynooth3 from '../img/project/maynooth3.png';
+import astromania1 from '../img/project/astromania1.jpg';
+import astromania2 from '../img/project/astromania2.jpg';
+import astromania3 from '../img/project/astromania3.jpg';
+import maynooth1 from '../img/project/maynooth1.jpg';
+import maynooth2 from '../img/project/maynooth2.jpg';
+import maynooth3 from '../img/project/maynooth3.jpg';
 import larousseliere1 from '../img/project/larousseliere1.jpg';
 import larousseliere2 from '../img/project/larousseliere2.jpg';
 import focaldesign1 from '../img/project/focaldesign1.jpg';
+import focaldesign2 from '../img/project/focaldesign2.jpg';
 
 export const projects = [
 	{
@@ -29,7 +31,7 @@ export const projects = [
 		year: '2021',
 		client:'My Digital School',
 		tools: 'Adobe Illustrator, Xd',
-		slides: [queuefree1]
+		slides: [queuefree1, queuefree2]
 
 	},
 	{
@@ -87,6 +89,6 @@ export const projects = [
 		year: '2021',
 		client:'Focal Design',
 		tools: 'Wordpress, Adobe Illustrator',
-		slides: [focaldesign1]
+		slides: [focaldesign1, focaldesign2]
 	},
 ];

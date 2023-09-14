@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
-
 import ScrollToTop from "./functions/scrollToTop";
 
 import Header from './components/Header';
@@ -38,6 +37,7 @@ export default function App() {
             <Router>
                 <ScrollToTop />
                     <Header french={french}/>
+
                     {/* Toggle Language Button */}
                     <div className="languagePicker">
                         <button onClick={handleClick}>
