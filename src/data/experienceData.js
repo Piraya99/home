@@ -33,7 +33,7 @@ export const studies = [
 			end:['Now', 'présent']
 		},
 		{
-			title:['MBA 2 Digital Marketing Expert', 'MBA 2 ExpertMarketing Digital'],
+			title:['MBA 2 Digital Marketing Expert', 'MBA 2 Expert Marketing Digital'],
 			place:['My Digital School (Saint-Herblain, France)', 'My Digital School (Saint-Herblain, France)'],
 			start:['Sep 2020 -', 'sept. 2020 -'],
 			end:['Aug 2022', 'août 2022']
