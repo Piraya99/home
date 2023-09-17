@@ -20,6 +20,9 @@ export default function ProjectPage(props) {
 				</div>
 			</div>
 			< Carousel project={props.project}/>
+			{ props.project.slides.map(slide => 
+			   <img className={styles.imgmobile} src={slide} alt={slide} />
+			)}
 		</main>
 	);
 };

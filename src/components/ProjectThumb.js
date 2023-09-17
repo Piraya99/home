@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function ProjectThumb(props) {
 	return (
-		<div className="project">
+		<div className="card">
 			<Link to={props.thumbObject.link}>
 				<img src={props.thumbObject.thumb} alt={props.thumbObject.title} />
 			</Link>

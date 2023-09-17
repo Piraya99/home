@@ -1,3 +1,7 @@
+.contact {
+	margin-top: 30px;
+}
+
 .contact img {
 	position:absolute;
     z-index:0;
@@ -5,18 +9,19 @@
     width: 100%;
 }
 
-.contact div{
+.contactInfo{
 	position: relative;
     z-index:1;
-    padding: 50px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .contact h3 {
-	position: relative;
-	margin: 0 auto;
 	color: var(--main-beige);
 	font-size: 1.75rem;
-	padding-bottom: 20px;
+	line-height: 1.5;
 }
 
 .contact p {

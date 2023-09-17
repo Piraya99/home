@@ -5,9 +5,9 @@ import { projects } from '../data/projectData';
 
 export default function ProjectThumbContainer(props) {
 	return (
-		<section id="projects" className="anchor">
+		<section className="projects">
 			<h3>{ props.french ? 'Projets' : 'Projects' }</h3>
-			<div className="container" id="projects">
+			<div className="wrapper">
 			    {projects.map(project => 
 			    	<ProjectThumb french={props.french} thumbObject={project} />
 			  	)}

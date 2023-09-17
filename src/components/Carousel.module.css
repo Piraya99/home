@@ -51,9 +51,8 @@
 }
 
 @media (max-width: 700px) {
-	.arrows {
-		position: relative;
-		top: -160px;
+	.carousel, .dotsContainer {
+		display: none;
 	}
 }
 

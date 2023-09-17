@@ -3,14 +3,14 @@ import profilePhoto from '../img/profilephoto.jpeg';
 import styles from './Bio.module.css';
 import { bio } from '../data/bioData';
 
-import Socialmedia from './Socialmedia';
+import Workpermit from './Workpermit';
 
 export default function Bio(props) {
 	return (
 		<div className={styles.bio}>
 
 			<div>
-				<img src={profilePhoto} alt="profilephoto"/>
+				<img className={styles.profilePhoto} src={profilePhoto} alt="profilephoto"/>
 			</div>
 
 			<div>
@@ -21,7 +21,7 @@ export default function Bio(props) {
 				<p>
 					{props.french ? bio.p[1] : bio.p[0]}
 				</p>
-				<Socialmedia />
+				<Workpermit french={props.french}/>
 			</div>
 
 		</div>

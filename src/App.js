@@ -7,6 +7,7 @@ import ScrollToTop from "./functions/scrollToTop";
 
 import Header from './components/Header';
 import Contact from './components/Contact';
+import Socialmedia from './components/Socialmedia';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
@@ -27,7 +28,7 @@ import expand from './img/icon/expand.svg';
  
 export default function App() {
     // Toggle Language Function
-  const [french, setFrench] = useState(false);
+  const [french, setFrench] = useState(true);
   const handleClick = () => {
     setFrench(!french);
   };
@@ -60,6 +61,7 @@ export default function App() {
                 </Routes>
             </Router>
 
+            <Socialmedia />
             <Contact french={french}/>
             <Footer french={french}/>
         </div>

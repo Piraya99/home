@@ -1,6 +1,7 @@
 .projectpage {
 	padding-bottom: 50px;
 }
+
 .container {
 	width: 90%;
 	margin: 0 auto;
@@ -29,7 +30,16 @@
 	margin: 10px 0;
 }
 
+.imgmobile {
+	display: none;
+}
+
 @media (max-width: 700px) {
+	
+	.projectpage {
+	padding-bottom: 20px;
+	}
+
 	.left, .right {
 		display: block;
 		width: 100%;
@@ -41,5 +51,10 @@
 
 	.right {
 		padding-bottom: 40px;
+	}
+
+	.imgmobile {
+		display: block;
+		margin-bottom: 20px;
 	}
 }

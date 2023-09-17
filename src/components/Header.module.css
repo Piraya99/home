@@ -44,11 +44,11 @@ header li a {
   padding-bottom: 0;
 }
 
-.menuIcon {
+.menuIcon, .listIcon {
   display: none;
 }
 
-.menuBtn {
+.menuBtn, .listBtn {
   display: none;
 }
 
@@ -147,6 +147,7 @@ header li a {
   .menuBtn:checked ~ .menuIcon:not(.steps) .navicon:after {
     top: 0;
   }
+
 }
 
 @media only screen and  (max-width: 320px) {
