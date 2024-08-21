@@ -15,7 +15,6 @@ export default function Header(props) {
 					<label className={styles.menuIcon} for="menuBtn"><span className={styles.navicon}></span></label>
 					<ul className={styles.menu}>
 							<li><Link to="/">Home</Link></li>
-						<li><Link to="/experience">{props.french ? 'Parcours' : 'Experiences'}</Link></li>
 						<li><Link to="/portfolio">{props.french ? 'Portfolio' : 'Portfolio'}</Link></li>
 						<li><Link to="/about">{props.french ? 'À propos' : 'About'}</Link></li>
 					</ul>
