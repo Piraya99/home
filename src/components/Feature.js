@@ -20,7 +20,7 @@ export default function Feature(props) {
 
 				<div className="box">
 					<h4>{props.french ? "Langues du Monde" : "World Languages"}</h4>
-					<ul>
+					<ul className={styles.worldlang}>
 						{worldlangs.map(worldlang =>
 							<li title={worldlang.hover}>
 								<span className={worldlang.classname}></span>

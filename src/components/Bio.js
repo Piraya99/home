@@ -15,10 +15,10 @@ export default function Bio(props) {
 
 			<div>
 				<h1>Piraya Sanpakij</h1>
-				<h2 id="bioSubtitle">
+				<h2 className={styles.bioSubtitle}>
 					{props.french ? bio.h2[1] : bio.h2[0]}
 				</h2>
-				<p>
+				<p className={styles.bioText}>
 					{props.french ? bio.p[1] : bio.p[0]}
 				</p>
 				<Workpermit french={props.french}/>

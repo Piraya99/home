@@ -3,6 +3,7 @@
   flex-flow: row wrap;
   justify-content: center;
   margin-bottom: 40px;
+  max-width: 90vw;
 }
 
 .profilePhoto {
@@ -10,18 +11,24 @@
   width: 160px;
   height: 160px;
   margin: 5px 50px 10px;
+  display: inline-block;
 }
 
-@media (max-width: 480px) {
+.bioText {
+  margin: 0 auto;
+  max-width: 60ch;
+}
+
+@media only screen and (max-width: 1024px){
+}
+
+@media (max-width: 768px) {
 
   .bio {
     display: block;
     text-align: center;
-    padding: 0 20px;
-    margin-bottom: 30px;
-  }
-
-  .bio img {
+    padding: 20px 0;
+    margin-bottom: 0;
   }
   
 }
