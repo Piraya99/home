@@ -65,6 +65,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .wrapper {
@@ -80,7 +81,6 @@ main {
   flex-direction: column;
   flex: 1;
   height: auto;
-  margin: 0px 15px 0px;
   padding: 0px 10px;
   background-color: rgba(230,231,232,0.75);
 }
@@ -128,7 +128,6 @@ h5 {
 
 p {
   font-weight: 400;
-  max-width: 60ch;
   font-size: 1rem;
 }
 
@@ -211,7 +210,7 @@ button img {
   padding-bottom: 30px;
   margin-bottom: 20px;
   box-shadow: 0 0 9px 3px rgba(41,41,41,.075);
-  border-radius: 16px;
+  border-radius: 12px;
 }
 
 .card h4 {
@@ -262,10 +261,6 @@ button img {
 
   .projects {
     width: 90vw;
-  }
-
-  .box {
-    margin-bottom: 30px;
   }
 
   .wrapper {

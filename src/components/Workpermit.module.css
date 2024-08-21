@@ -1,18 +1,21 @@
 .workpermit {
-	display: flex;
-	align-items: center;
 	background-color: rgba(230,231,232,0.75);
 	padding: 10px 20px;
-	margin: 20px 0;
-	max-width: 60ch;
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
 }
 
 .workpermit img {
-	width: 40px;
+	width: 60px;
 	height: auto;
 }
 
 .workpermit p {
 	padding-left: 20px;
 	text-align: left;
+	max-width: 40ch;
+}
+
+@media (max-width: 768px) {
 }
