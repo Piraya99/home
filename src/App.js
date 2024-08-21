@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 import Experience from './pages/Experience';
-import Projects from './pages/Projects';
+import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 
 // ImportProject Pages
@@ -53,7 +53,7 @@ export default function App() {
                         <Route exact path='/' exact element={<Home french={french} />} />
                         {/* Navbar */}
                         <Route path='/experience' element={<Experience french={french}/>} />
-                        <Route path='/projects' element={<Projects french={french}/>} />
+                        <Route path='/portfolio' element={<Portfolio french={french}/>} />
                         <Route path='/about' element={<About french={french}/>} />
                         {/* Link to projects */}
                         <Route path='/projects/queuefree' element={<QueueFree french={french}/>} />
