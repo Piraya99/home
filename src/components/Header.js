@@ -14,7 +14,7 @@ export default function Header(props) {
 					<input className={styles.menuBtn} type="checkbox" id="menuBtn" />
 					<label className={styles.menuIcon} for="menuBtn"><span className={styles.navicon}></span></label>
 					<ul className={styles.menu}>
-							<li><Link to="/">Home</Link></li>
+							<li><Link to="/">{props.french ? 'Accueil' : 'Home'}</Link></li>
 						<li><Link to="/portfolio">{props.french ? 'Portfolio' : 'Portfolio'}</Link></li>
 						<li><Link to="/about">{props.french ? 'À propos' : 'About'}</Link></li>
 					</ul>
