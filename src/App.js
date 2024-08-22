@@ -38,7 +38,7 @@ export default function App() {
             <Router>
                 <ScrollToTop />
                     <Header french={french}/>
-                    
+
                     {/* Toggle Language Button */}
                     <div className="languagePicker">
                         <button onClick={handleClick}>
@@ -49,7 +49,8 @@ export default function App() {
                     </div>
 
                 <Routes>
-                        <Route exact path='/' exact element={<Home french={french} />} />
+                        <Route exact path='/' exact element={<Home french={french}/>} />
+
                         {/* Navbar */}
                         <Route path='/portfolio' element={<Portfolio french={french}/>} />
                         <Route path='/about' element={<About french={french}/>} />
