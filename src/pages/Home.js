@@ -1,11 +1,11 @@
 import React from 'react';
 
-import ProjectThumbContainer from '../components/ProjectThumbContainer';
+import LearnThumbContainer from '../components/LearnThumbContainer';
 
 export default function Home(props) {
 	return (
 		<main>
-	        < ProjectThumbContainer french={props.french} />
+	        < LearnThumbContainer french={props.french} />
       	</main>
 	);
 };
