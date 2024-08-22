@@ -8,37 +8,37 @@ import notetakingThumb from '../img/learn/notetaking-thumb.jpg';
 
 export const courses = [
 	{
-		title: 'Aquarelle',
+		title: ['Watercolor', 'Aquarelle'],
 		thumb: watercolorThumb,
 		// link: '/learn/watercolor',
 	},
 
 	{
-		title: 'Dessin Réaliste',
+		title: ['Realistic Drawing','Dessin Réaliste'],
 		thumb: realisticThumb,
 		// link: '/learn/realistic',
 	},
 
 	{
-		title: 'Modelage',
+		title: ['Air-Dry Clay', 'Modelage'],
 		thumb: airdryThumb,
 		// link: '/learn/airdry',
 	},
 
 	{
-		title: 'Sashiko',
+		title: ['Sashiko', 'Sashiko'],
 		thumb: sashikoThumb,
 		// link: '/learn/sashiko',
 	},
 
 	{
-		title: 'Carnet de Voyage',
+		title: ['Travel Sketching', 'Carnet de Voyage'],
 		thumb: travelsketchThumb,
 		// link: '/learn/travelsketch',
 	},
 
 	{
-		title: 'Prise de Notes',
+		title: ['Notetaking', 'Prise de Notes'],
 		thumb: notetakingThumb,
 		// link: '/learn/notetaking',
 	},

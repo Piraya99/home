@@ -8,7 +8,9 @@ export default function LearnThumb(props) {
 				<img src={props.thumbObject.thumb} alt={props.thumbObject.title} />
 			{/* </Link> */}
 			{/* <Link to={props.thumbObject.link}> */}
-				<h4>{props.thumbObject.title}</h4> 
+				<h4>
+					{props.french ? props.thumbObject.title[1] : props.thumbObject.title[0]}
+				</h4> 
 			{/* </Link> */}
 		</div>
 	);

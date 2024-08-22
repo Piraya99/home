@@ -38,7 +38,7 @@ export default function App() {
             <Router>
                 <ScrollToTop />
                     <Header french={french}/>
-
+                    
                     {/* Toggle Language Button */}
                     <div className="languagePicker">
                         <button onClick={handleClick}>
